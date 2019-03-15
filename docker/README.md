@@ -74,3 +74,58 @@ Publish image on docker hub
 docker login  # first login
 docker push `image_name` # e.g samkaris/django
 ```
+
+#### Docker Compose
+
+Build services(images)
+
+```
+Docker-compose build
+```
+
+To start image as running container
+
+```
+Docker-compose up
+```
+
+To tear down the running conatainers
+
+```
+Docker-compose down
+```
+
+To view logs
+
+```
+Docker-compose logs
+```
+
+To view running container
+
+```
+Docker-compose ps
+```
+
+To stop running services
+
+```
+Docker-compose stop
+```
+
+To start services
+
+```
+Docker-compose start
+```
+
+Remove containers making our services
+
+```
+Docker-compose rm
+```
+
+Stop and Remove containers, images, volumes
+```
+Docker-compose down --rmi all --volumes
+```
